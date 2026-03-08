@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <!-- Brighter Metallic Gold/Bronze -->
+    <linearGradient id="bronzeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFDCA8"/>
+      <stop offset="30%" stop-color="#C5A880"/>
+      <stop offset="70%" stop-color="#A68B6D"/>
+      <stop offset="100%" stop-color="#7A6040"/>
+    </linearGradient>
+    
+    <!-- Darker, richer charcoal/sage color -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E221E"/>
+      <stop offset="100%" stop-color="#0A0C0A"/>
+    </linearGradient>
+
+    <!-- Strong drop shadow for the letters to punch through light background -->
+    <filter id="dropShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="8" stdDeviation="15" flood-color="#000" flood-opacity="0.3"/>
+      <!-- Soft bloom effect -->
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8" result="blur2"/>
+      <feColorMatrix in="blur2" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.5 0" result="bloom"/>
+      <feMerge>
+        <feMergeNode/> <!-- Drop Shadow -->
+        <feMergeNode in="bloom"/> <!-- Glow -->
+        <feMergeNode in="SourceGraphic"/> <!-- Actual letters -->
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Premium Metallic Bronze Background -->
+  <rect width="512" height="512" rx="100" fill="url(#bronzeGradient)"/>
+  
+  <!-- Subtler rings mapped to dark mode -->
+  <circle cx="256" cy="256" r="210" fill="none" stroke="url(#bgGradient)" stroke-width="4" opacity="0.15"/>
+  <circle cx="256" cy="256" r="190" fill="none" stroke="url(#bgGradient)" stroke-width="1" opacity="0.4"/>
+  
+  <!-- Mathematically precise TJA Monogram -->
+  <g fill="url(#bgGradient)" filter="url(#dropShadow)" transform="translate(118, 186)">
+    
+    <!-- T: Perfectly balanced horizontal and vertical stems -->
+    <path d="M 0 0 h 64 v 20 h -22 v 120 h -20 v -120 h -22 z" />
+    
+    <!-- J: Flawless smooth hook geometry -->
+    <path d="M 160 0 v 105 q 0 35 -35 35 q -35 0 -35 -35 v -20 h 20 v 20 q 0 15 15 15 q 15 0 15 -15 v -105 z" />
+    
+    <!-- A: Clean geometric sharp cuts -->
+    <path d="M 186 140 l 35 -140 h 20 l 35 140 h -22 l -11 -45 h -24 l -11 45 z M 231 35 l -7 40 h 14 z" />
+    
+    <!-- High-end structural dot -->
+    <circle cx="298" cy="130" r="10" />
+    
+  </g>
+</svg>

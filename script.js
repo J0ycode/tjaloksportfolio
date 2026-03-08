@@ -23,20 +23,60 @@
         let dotX = mouseX;
         let dotY = mouseY;
 
+        const heroName = document.querySelector('.hero-name');
+        let animatedX = 150;
+        let animatedY = 50;
+
         // Track Mouse
         window.addEventListener('mousemove', (e) => {
             mouseX = e.clientX;
             mouseY = e.clientY;
         });
 
-        // Smoothly trail the dot (single element physics)
-        const animateCursor = () => {
-            dotX += (mouseX - dotX) * 0.15; // Smooth premium easing
+        // Smoothly trail the dot & handle organic name animation
+        const animatePhysics = () => {
+            // 1. Custom Cursor Physics
+            dotX += (mouseX - dotX) * 0.15;
             dotY += (mouseY - dotY) * 0.15;
             cursorDot.style.transform = `translate3d(calc(${dotX}px - 50%), calc(${dotY}px - 50%), 0)`;
-            requestAnimationFrame(animateCursor);
+
+            // 2. Name Glow Logic (Ambient Roam vs. Proximity Tracking)
+            if (heroName) {
+                const rect = heroName.getBoundingClientRect();
+
+                // Calculate distance from mouse to the text bounding box center
+                const textCenterX = rect.left + rect.width / 2;
+                const textCenterY = rect.top + rect.height / 2;
+                const distanceX = mouseX - textCenterX;
+                const distanceY = mouseY - textCenterY;
+                const distance = Math.sqrt(distanceX * distanceX + distanceY * distanceY);
+
+                // If mouse is within ~300px of the center of the text, track mouse tightly
+                if (distance < 300) {
+                    const targetX = mouseX - rect.left;
+                    const targetY = mouseY - rect.top;
+                    // Fast lerp to mouse
+                    animatedX += (targetX - animatedX) * 0.1;
+                    animatedY += (targetY - animatedY) * 0.1;
+                } else {
+                    // Organic roaming animation when mouse is far away
+                    const time = Date.now() * 0.001; // Scale time
+                    // Roam between roughly -20% to 120% of the text width/height
+                    const targetX = (Math.sin(time) * 0.4 + 0.5) * rect.width;
+                    const targetY = (Math.cos(time * 0.7) * 0.3 + 0.5) * rect.height;
+
+                    // Slow, buttery lerp to organic path
+                    animatedX += (targetX - animatedX) * 0.02;
+                    animatedY += (targetY - animatedY) * 0.02;
+                }
+
+                heroName.style.setProperty('--mouse-x', `${animatedX}px`);
+                heroName.style.setProperty('--mouse-y', `${animatedY}px`);
+            }
+
+            requestAnimationFrame(animatePhysics);
         };
-        requestAnimationFrame(animateCursor);
+        requestAnimationFrame(animatePhysics);
 
         // Hover effect over text and interactive elements using event delegation
         window.addEventListener('mouseover', (e) => {
