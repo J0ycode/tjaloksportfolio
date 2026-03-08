@@ -327,9 +327,12 @@ button {
     max-width: 95vw;
     /* Prevent overflow */
     padding: 0.5rem 1.2rem;
-    /* Flexible padding instead of fixed height */
-    min-height: 64px;
     z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 56px;
+    /* Slightly more compact and precise */
 
     /* Premium Glassmorphism */
     background: rgba(var(--bg-rgb), 0.65);
@@ -420,8 +423,14 @@ button {
     font-weight: 700;
     color: var(--text);
     letter-spacing: 0.02em;
-    padding: 0.5rem 1rem;
+    padding: 0.6rem 1.2rem;
+    /* Adjusted for better cylindrical balance */
     border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    /* Force predictable height */
     transition: all var(--t) var(--ease);
 }
 
