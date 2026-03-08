@@ -2318,6 +2318,21 @@ button {
         width: 100%;
         box-sizing: border-box;
     }
+
+    /* Scroll Reveal Animations (Mobile Only) */
+    .reveal-on-scroll {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.8s var(--ease), transform 0.8s var(--ease);
+        visibility: hidden;
+        will-change: opacity, transform;
+    }
+
+    .reveal-on-scroll.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+        visibility: visible;
+    }
 }
 
 /* ==========================================================================

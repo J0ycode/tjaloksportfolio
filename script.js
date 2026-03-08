@@ -393,4 +393,47 @@
         });
     }
 
+    /* -----------------------------------------------------------------------
+       MOBILE SCROLL REVEAL (Intersection Observer)
+    ----------------------------------------------------------------------- */
+    function initScrollReveal() {
+        if (window.innerWidth > 768) return;
+
+        const revealOptions = {
+            threshold: 0.15,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target); // Run once
+                }
+            });
+        }, revealOptions);
+
+        // Select elements to animate
+        const targetSelectors = [
+            '.section',
+            '.edu-card',
+            '.pub-card',
+            '.skill-card',
+            '.project-card',
+            '.service-card',
+            '.contact-grid > div',
+            '.footer-socials'
+        ];
+
+        targetSelectors.forEach(selector => {
+            document.querySelectorAll(selector).forEach(el => {
+                el.classList.add('reveal-on-scroll');
+                observer.observe(el);
+            });
+        });
+    }
+
+    // Initialize on load
+    initScrollReveal();
+
 })();
