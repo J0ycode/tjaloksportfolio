@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="T J Alok – Legal academic and practitioner specializing in International Trade Law. Assistant Professor, Lawyer, and LLM candidate at NUALS Kochi.">
+    <meta name="keywords"
+        content="T J Alok, T J Alok Lawyer, International Trade Law Expert, Assistant Professor Law India, NUALS Kochi LLM, Legal Research, Corporate Law">
+    <meta name="author" content="T J Alok">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="T J Alok | Assistant Professor &amp; Lawyer">
+    <meta property="og:description"
+        content="Portfolio of T J Alok – Legal academic specializing in International Trade Law.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tjalok.com">
+    <meta property="og:image" content="https://tjalok.com/og-image.jpg">
+
+    <title>T J Alok | Assistant Professor &amp; Lawyer</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "T J Alok",
+      "jobTitle": ["Assistant Professor", "Lawyer"],
+      "alumniOf": [
+        { "@type": "CollegeOrUniversity", "name": "National University of Advanced Legal Studies (NUALS)" },
+        { "@type": "CollegeOrUniversity", "name": "Madhusudan Law University" },
+        { "@type": "CollegeOrUniversity", "name": "Berhampur University" }
+      ],
+      "address": { "@type": "PostalAddress", "addressLocality": "Kochi", "addressRegion": "Kerala", "addressCountry": "India" },
+      "url": "https://tjalok.com"
+    }
+    </script>
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursor-dot"></div>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <!-- =====================================================================
+         FLOATING BUTTONS
+         ===================================================================== -->
+    <button id="back-to-top" class="fab back-to-top" aria-label="Back to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Site Logo (Top Left) -->
+    <a href="#home" class="site-logo">T J Alok</a>
+
+    <!-- =====================================================================
+         NAVIGATION
+         ===================================================================== -->
+    <header class="header" id="header">
+        <div class="nav-container">
+            <div class="nav-actions">
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu" aria-expanded="false">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list" role="list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#publications" class="nav-link">Publications</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- =================================================================
+             HERO
+             ================================================================= -->
+        <section id="home" class="hero">
+            <canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+            <div class="container hero-container">
+                <!-- Left: Text -->
+                <div class="hero-content">
+                    <span class="greeting">Welcome to my portfolio</span>
+
+                    <h1 class="hero-name">T J Alok</h1>
+
+                    <div class="hero-title">
+                        <span class="typed-text"></span>
+                        <span class="cursor" aria-hidden="true"></span>
+                    </div>
+
+                    <p class="hero-desc">
+                        A legal academic and practitioner specializing in International Trade Law — bridging academia
+                        and professional practice with an interdisciplinary approach.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#publications" class="btn btn-primary">
+                            View Publications
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            Contact Me
+                        </a>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-num counter" data-target="9.3" data-decimals="1">0</span>
+                            <span class="stat-label">CGPA Honours</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num counter" data-target="6" data-decimals="0">0</span>
+                            <span class="stat-label">Languages</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num counter" data-target="1" data-decimals="0">0</span>
+                            <span class="stat-label">Publication</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Image -->
+                <div class="hero-image-wrapper" aria-hidden="true">
+                    <div class="hero-img-ring"></div>
+                    <div class="hero-img-glow"></div>
+                    <img src="image_upscaled.jpeg" alt="T J Alok – Assistant Professor and Lawyer" class="hero-image"
+                        loading="eager">
+                </div>
+            </div>
+
+            <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+                <span>Scroll</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </a>
+        </section>
+
+        <!-- =================================================================
+             ABOUT
+             ================================================================= -->
+        <section id="about" class="section reveal">
+            <div class="container">
+                <div class="section-head">
+                    <span class="tag-label">My Story</span>
+                    <h2>About Me</h2>
+                </div>
+                <div class="about-grid">
+                    <!-- Text -->
+                    <div class="about-text glass" style="padding: 2.5rem; border-radius: var(--radius-lg);">
+                        <p>
+                            T J Alok is currently pursuing an <strong>LLM in International Trade Law</strong> at the
+                            National University of Advanced Legal Studies (NUALS), Kochi. He completed his LLB from
+                            Madhusudan Law University and holds a BSc in Chemistry (Honours) from Berhampur University
+                            with a stellar CGPA of 9.3.
+                        </p>
+                        <p>
+                            He was honoured with the <strong>Student of the Year Award</strong> for academic excellence.
+                            His interdisciplinary journey, spanning the natural sciences and law, equips him with a
+                            uniquely analytical perspective.
+                        </p>
+
+                        <div class="achievement-chip">
+                            <i class="fa-solid fa-award"></i> Student of the Year — Academic Excellence
+                        </div>
+
+                        <div class="interests-heading">Personal Interests</div>
+                        <ul class="interest-tags" role="list">
+                            <li class="interest-tag"><i class="fa-solid fa-microphone"></i> Singing</li>
+                            <li class="interest-tag"><i class="fa-solid fa-palette"></i> Painting</li>
+                            <li class="interest-tag"><i class="fa-solid fa-utensils"></i> Cooking</li>
+                            <li class="interest-tag"><i class="fa-solid fa-book-open"></i> Reading</li>
+                        </ul>
+                    </div>
+
+                    <!-- Cards (Bento) -->
+                    <div class="about-cards">
+                        <div class="info-card stagger-child">
+                            <div class="card-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+                            <h4>Legal Professional</h4>
+                            <p>Practising across international trade, corporate and constitutional domains.</p>
+                        </div>
+                        <div class="info-card stagger-child">
+                            <div class="card-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+                            <h4>Academic Educator</h4>
+                            <p>Assistant Professor at Dr B R Ambedkar Global Law Institute, Tirupati.</p>
+                        </div>
+                        <div class="info-card stagger-child">
+                            <div class="card-icon"><i class="fa-solid fa-globe"></i></div>
+                            <h4>Young ICCA Member</h4>
+                            <p>Active member of the International Council for Commercial Arbitration.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =================================================================
+             EXPERIENCE
+             ================================================================= -->
+        <section id="experience" class="section exp-section reveal">
+            <div class="container">
+                <div class="section-head">
+                    <span class="tag-label">Career Journey</span>
+                    <h2>Experience</h2>
+                    <p class="section-sub">A path built on purpose — bridging scholarship and the law, one milestone at
+                        a time.</p>
+                </div>
+                <div class="exp-cards">
+
+                    <!-- 01 -->
+                    <div class="exp-card exp-card--active stagger-child">
+                        <div class="exp-card-left">
+                            <span class="exp-step">01</span>
+                            <div class="exp-icon-ring"><i class="fa-solid fa-chalkboard-user"></i></div>
+                        </div>
+                        <div class="exp-card-body">
+                            <div class="exp-meta">
+                                <span class="exp-date"><i class="fa-regular fa-calendar-days"></i> Jan 2026 –
+                                    Present</span>
+                                <span class="exp-status exp-status--current">● Currently Active</span>
+                            </div>
+                            <h3 class="exp-title">Assistant Professor</h3>
+                            <p class="exp-org"><i class="fa-solid fa-building-columns"></i> Dr B R Ambedkar Global Law
+                                Institute &nbsp;·&nbsp; Tirupati, Andhra Pradesh</p>
+                            <p class="exp-desc">Teaching and inspiring the next generation of legal minds, with a focus
+                                on trade law, constitutional principles, and legal theory. Designing curriculum and
+                                fostering critical legal thinking.</p>
+                            <div class="exp-tags">
+                                <span class="exp-tag">Teaching</span>
+                                <span class="exp-tag">Curriculum Design</span>
+                                <span class="exp-tag">Research</span>
+                                <span class="exp-tag">Academia</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 02 -->
+                    <div class="exp-card exp-card--active stagger-child">
+                        <div class="exp-card-left">
+                            <span class="exp-step">02</span>
+                            <div class="exp-icon-ring"><i class="fa-solid fa-globe"></i></div>
+                        </div>
+                        <div class="exp-card-body">
+                            <div class="exp-meta">
+                                <span class="exp-date"><i class="fa-regular fa-calendar-days"></i> 2025 – Present</span>
+                                <span class="exp-status exp-status--current">● Currently Active</span>
+                            </div>
+                            <h3 class="exp-title">Young ICCA Member</h3>
+                            <p class="exp-org"><i class="fa-solid fa-earth-asia"></i> International Council for
+                                Commercial Arbitration &nbsp;·&nbsp; Global</p>
+                            <p class="exp-desc">Active participant in the global arbitration community, engaging with
+                                international commercial dispute resolution frameworks, attending expert forums, and
+                                networking with leading practitioners worldwide.</p>
+                            <div class="exp-tags">
+                                <span class="exp-tag">Arbitration</span>
+                                <span class="exp-tag">Dispute Resolution</span>
+                                <span class="exp-tag">International Law</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 03 -->
+                    <div class="exp-card exp-card--academic stagger-child">
+                        <div class="exp-card-left">
+                            <span class="exp-step">03</span>
+                            <div class="exp-icon-ring"><i class="fa-solid fa-user-graduate"></i></div>
+                        </div>
+                        <div class="exp-card-body">
+                            <div class="exp-meta">
+                                <span class="exp-date"><i class="fa-regular fa-calendar-days"></i> 2025 – 2026</span>
+                                <span class="exp-status exp-status--academic">Academic Role</span>
+                            </div>
+                            <h3 class="exp-title">Arts Representative — LLM Batch of 25'</h3>
+                            <p class="exp-org"><i class="fa-solid fa-building-columns"></i> National University of
+                                Advanced Legal Studies (NUALS) &nbsp;·&nbsp; Kochi, Kerala</p>
+                            <p class="exp-desc">Elected representative for the arts and cultural wing of the LLM cohort,
+                                fostering community, creativity, and meaningful academic dialogue among peers and
+                                faculty.</p>
+                            <div class="exp-tags">
+                                <span class="exp-tag">Leadership</span>
+                                <span class="exp-tag">Student Representative</span>
+                                <span class="exp-tag">Community</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 04 -->
+                    <div class="exp-card exp-card--intern stagger-child">
+                        <div class="exp-card-left">
+                            <span class="exp-step">04</span>
+                            <div class="exp-icon-ring"><i class="fa-solid fa-gavel"></i></div>
+                        </div>
+                        <div class="exp-card-body">
+                            <div class="exp-meta">
+                                <span class="exp-date"><i class="fa-regular fa-calendar-days"></i> 2023</span>
+                                <span class="exp-status exp-status--intern">Internship</span>
+                            </div>
+                            <h3 class="exp-title">Judicial Intern</h3>
+                            <p class="exp-org"><i class="fa-solid fa-landmark"></i> District and Sessions Court
+                                &nbsp;·&nbsp; Odisha</p>
+                            <p class="exp-desc">Gained hands-on courtroom experience assisting with case preparation,
+                                legal drafting, and courtroom observation — a pivotal foundation in procedural law and
+                                judicial process.</p>
+                            <div class="exp-tags">
+                                <span class="exp-tag">Judicial Work</span>
+                                <span class="exp-tag">Procedural Law</span>
+                                <span class="exp-tag">Legal Drafting</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 05 -->
+                    <div class="exp-card exp-card--intern stagger-child">
+                        <div class="exp-card-left">
+                            <span class="exp-step">05</span>
+                            <div class="exp-icon-ring"><i class="fa-solid fa-scale-balanced"></i></div>
+                        </div>
+                        <div class="exp-card-body">
+                            <div class="exp-meta">
+                                <span class="exp-date"><i class="fa-regular fa-calendar-days"></i> 2022 – 2023</span>
+                                <span class="exp-status exp-status--intern">Internship</span>
+                            </div>
+                            <h3 class="exp-title">Legal Intern</h3>
+                            <p class="exp-org"><i class="fa-solid fa-briefcase"></i> Tarini Panigrahi and Associates
+                                &nbsp;·&nbsp; Odisha</p>
+                            <p class="exp-desc">Supported senior advocates with legal research, drafting of plaints and
+                                written statements, and client advisory — building a strong base in civil litigation and
+                                professional legal practice.</p>
+                            <div class="exp-tags">
+                                <span class="exp-tag">Litigation</span>
+                                <span class="exp-tag">Legal Drafting</span>
+                                <span class="exp-tag">Research</span>
+                                <span class="exp-tag">Client Advisory</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- =================================================================
+             EDUCATION
+             ================================================================= -->
+        <section id="education" class="section reveal">
+            <div class="container">
+                <div class="section-head">
+                    <span class="tag-label">Academic Background</span>
+                    <h2>Education</h2>
+                </div>
+                <div class="edu-grid">
+                    <div class="edu-card stagger-child">
+                        <div class="edu-icon-wrap"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <h3>LLM – International Trade Law</h3>
+                        <h4>National University of Advanced Legal Studies, Kochi</h4>
+                    </div>
+                    <div class="edu-card stagger-child">
+                        <div class="edu-icon-wrap"><i class="fa-solid fa-gavel"></i></div>
+                        <h3>LLB – Bachelor of Laws</h3>
+                        <h4>Madhusudan Law University</h4>
+                    </div>
+                    <div class="edu-card featured stagger-child">
+                        <span class="edu-tag">Top Performer</span>
+                        <div class="edu-icon-wrap"><i class="fa-solid fa-flask"></i></div>
+                        <h3>BSc Chemistry (Honours)</h3>
+                        <h4>Berhampur University</h4>
+                        <div class="edu-badges">
+                            <span class="badge badge-default">CGPA: 9.3</span>
+                            <span class="badge badge-accent">Student of the Year</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =================================================================
+             SKILLS
+             ================================================================= -->
+        <section id="skills" class="section bg-alt reveal">
+            <div class="container">
+                <div class="section-head">
+                    <span class="tag-label">Expertise</span>
+                    <h2>Skills</h2>
+                </div>
+                <div class="skills-wrapper">
+                    <!-- Legal Skills -->
+                    <div class="skill-group stagger-child">
+                        <div class="skill-group-title">
+                            <i class="fa-solid fa-scale-unbalanced"></i> Legal Expertise
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag"><i class="fa-solid fa-check"></i> International Trade Law</span>
+                            <span class="skill-tag"><i class="fa-solid fa-check"></i> Trade Compliance</span>
+                            <span class="skill-tag"><i class="fa-solid fa-check"></i> Corporate Law</span>
+                            <span class="skill-tag"><i class="fa-solid fa-check"></i> Family &amp; Criminal Law</span>
+                            <span class="skill-tag"><i class="fa-solid fa-check"></i> Contract Law</span>
+                            <span class="skill-tag"><i class="fa-solid fa-check"></i> Constitutional Law</span>
+                        </div>
+                    </div>
+
+                    <!-- Professional Skills -->
+                    <div class="skill-group stagger-child">
+                        <div class="skill-group-title">
+                            <i class="fa-solid fa-briefcase"></i> Professional Skills
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag"><i class="fa-solid fa-pen-nib"></i> Legal Research &amp;
+                                Writing</span>
+                            <span class="skill-tag"><i class="fa-solid fa-chalkboard-user"></i> Teaching &amp;
+                                Curriculum Design</span>
+                            <span class="skill-tag"><i class="fa-solid fa-microphone-lines"></i> Public Speaking</span>
+                            <span class="skill-tag"><i class="fa-solid fa-handshake-angle"></i> Dispute
+                                Resolution</span>
+                            <span class="skill-tag"><i class="fa-solid fa-comments-dollar"></i> Negotiation</span>
+                        </div>
+                    </div>
+
+                    <!-- Core Competencies -->
+                    <div class="skill-group stagger-child">
+                        <div class="skill-group-title">
+                            <i class="fa-solid fa-lightbulb"></i> Core Competencies
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag"><i class="fa-solid fa-comments"></i> Strategic Communication</span>
+                            <span class="skill-tag"><i class="fa-solid fa-handshake"></i> Client Advisory</span>
+                            <span class="skill-tag"><i class="fa-solid fa-magnifying-glass-chart"></i> Analytical
+                                Thinking</span>
+                            <span class="skill-tag"><i class="fa-solid fa-users-gear"></i> Cross-Functional
+                                Collaboration</span>
+                            <span class="skill-tag"><i class="fa-solid fa-book-open-reader"></i> Interdisciplinary
+                                Approach</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =================================================================
+             PUBLICATIONS
+             ================================================================= -->
+        <section id="publications" class="section reveal">
+            <div class="container">
+                <div class="section-head">
+                    <span class="tag-label">Research &amp; Writing</span>
+                    <h2>Publications</h2>
+                </div>
+                <div class="pub-card">
+                    <div class="pub-year">2024</div>
+                    <div class="pub-body">
+                        <span class="pub-journal"><i class="fa-solid fa-bookmark"></i> Indian Journal of Law and Legal
+                            Research</span>
+                        <h3>The Evolution of Copyright Law in the Digital Age</h3>
+                        <a href="#" class="btn btn-outline btn-sm" target="_blank" rel="noopener">
+                            Read Article <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =================================================================
+             SERVICES
+             ================================================================= -->
+        <section id="services" class="section bg-alt reveal">
+            <div class="container">
+                <div class="section-head">
+                    <span class="tag-label">What I Offer</span>
+                    <h2>Services</h2>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card stagger-child">
+                        <div class="service-icon-wrap"><i class="fa-solid fa-magnifying-glass"></i></div>
+                        <h3>Legal Research</h3>
+                        <p>In-depth research across international trade, corporate and constitutional domains.</p>
+                    </div>
+                    <div class="service-card stagger-child">
+                        <div class="service-icon-wrap"><i class="fa-solid fa-pen-nib"></i></div>
+                        <h3>Legal Writing</h3>
+                        <p>Drafting persuasive legal documents, academic papers, articles, and submissions.</p>
+                    </div>
+                    <div class="service-card stagger-child">
+                        <div class="service-icon-wrap"><i class="fa-solid fa-microphone-lines"></i></div>
+                        <h3>Public Speaking</h3>
+                        <p>Engaging presentations and talks on contemporary legal and academic topics.</p>
+                    </div>
+                    <div class="service-card stagger-child">
+                        <div class="service-icon-wrap"><i class="fa-solid fa-chalkboard-user"></i></div>
+                        <h3>Teaching &amp; Training</h3>
+                        <p>Academic instruction and professional training for law students and practitioners.</p>
+                    </div>
+                    <div class="service-card stagger-child">
+                        <div class="service-icon-wrap"><i class="fa-solid fa-building-columns"></i></div>
+                        <h3>Corporate Law Consultation</h3>
+                        <p>Strategic advice on corporate compliance, governance, and legal risk management.</p>
+                    </div>
+                    <div class="service-card stagger-child">
+                        <div class="service-icon-wrap"><i class="fa-solid fa-handshake"></i></div>
+                        <h3>Negotiation &amp; Legal Advice</h3>
+                        <p>Sound legal counsel and effective dispute resolution across complex legal matters.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =================================================================
+             LANGUAGES
+             ================================================================= -->
+        <section class="section reveal">
+            <div class="container">
+                <div class="section-head">
+                    <span class="tag-label">Communication</span>
+                    <h2>Languages</h2>
+                </div>
+                <div class="languages-wrapper">
+                    <span class="lang-pill"><span class="lang-dot"></span>English</span>
+                    <span class="lang-pill"><span class="lang-dot"></span>Hindi</span>
+                    <span class="lang-pill"><span class="lang-dot"></span>Odia</span>
+                    <span class="lang-pill"><span class="lang-dot"></span>Telugu</span>
+                    <span class="lang-pill"><span class="lang-dot"></span>Malayalam</span>
+                    <span class="lang-pill"><span class="lang-dot"></span>Bengali</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- =================================================================
+             CONTACT
+             ================================================================= -->
+        <section id="contact" class="section bg-alt reveal">
+            <div class="container">
+                <div class="section-head">
+                    <span class="tag-label">Let's Connect</span>
+                    <h2>Contact Me</h2>
+                </div>
+                <div class="contact-grid">
+                    <!-- Left -->
+                    <div class="contact-left">
+                        <h3>Get in Touch</h3>
+                        <p>Whether you want to discuss a legal matter, collaboration, academic opportunity, or simply
+                            say hello — I would love to hear from you.</p>
+
+                        <div class="contact-points">
+                            <div class="contact-point">
+                                <div class="cp-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="cp-text">
+                                    <h5>Location</h5>
+                                    <p>Kochi, Kerala, India</p>
+                                </div>
+                            </div>
+                            <div class="contact-point">
+                                <div class="cp-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="cp-text">
+                                    <h5>Email</h5>
+                                    <a href="mailto:hello@tjalok.com">hello@tjalok.com</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="socials">
+                            <a href="#" class="social-btn" aria-label="LinkedIn"><i
+                                    class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#" class="social-btn" aria-label="Google Scholar"><i
+                                    class="fa-brands fa-google"></i></a>
+                            <a href="#" class="social-btn" aria-label="ResearchGate"><i
+                                    class="fa-brands fa-researchgate"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Form -->
+                    <div class="contact-form-wrap">
+                        <form id="contact-form" novalidate>
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your name" required
+                                    autocomplete="name">
+                                <p class="error-msg" id="name-error" role="alert">Please enter your name.</p>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="your@email.com" required
+                                    autocomplete="email">
+                                <p class="error-msg" id="email-error" role="alert">Please enter a valid email.</p>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Write your message here..."
+                                    required></textarea>
+                                <p class="error-msg" id="message-error" role="alert">Please enter your message.</p>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">
+                                Send Message <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                            <div id="form-success" class="form-success-msg" role="status">
+                                <i class="fa-solid fa-circle-check"></i> Message sent! I'll get back to you shortly.
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- =====================================================================
+         FOOTER (Premium Structured)
+         ===================================================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Branding & About -->
+                <div class="footer-brand">
+                    <a href="#home" class="footer-logo">T J Alok</a>
+                    <p class="footer-desc">
+                        A legal academic and practitioner specializing in International Trade Law, bridging the gap
+                        between rigorous scholarship and professional practice.
+                    </p>
+                    <div class="footer-socials">
+                        <a href="#" class="social-icon" aria-label="LinkedIn"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon" aria-label="Google Scholar"><i
+                                class="fa-brands fa-google"></i></a>
+                        <a href="#" class="social-icon" aria-label="ResearchGate"><i
+                                class="fa-brands fa-researchgate"></i></a>
+                        <a href="mailto:hello@tjalok.com" class="social-icon" aria-label="Email"><i
+                                class="fa-regular fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-links-col">
+                    <h4 class="footer-heading">Navigation</h4>
+                    <ul class="footer-links" role="list">
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#publications">Publications</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="footer-links-col">
+                    <h4 class="footer-heading">Expertise</h4>
+                    <ul class="footer-links" role="list">
+                        <li><a href="#services">International Trade Law</a></li>
+                        <li><a href="#services">Corporate Compliance</a></li>
+                        <li><a href="#services">Constitutional Law</a></li>
+                        <li><a href="#services">Legal Research</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-contact-col">
+                    <h4 class="footer-heading">Contact</h4>
+                    <ul class="footer-contact-list" role="list">
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Kochi, Kerala, India</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:hello@tjalok.com">hello@tjalok.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <p class="copyright">&copy; <span id="current-year"></span> T J Alok. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <span class="separator">&middot;</span>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
