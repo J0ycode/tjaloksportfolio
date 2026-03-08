@@ -430,13 +430,14 @@ button {
 
 .nav-link:hover,
 .nav-link.active {
-    color: var(--text);
-    background: rgba(0, 0, 0, 0.04);
+    color: var(--bg);
+    background: var(--text);
 }
 
 [data-theme="dark"] .nav-link:hover,
 [data-theme="dark"] .nav-link.active {
-    background: rgba(255, 255, 255, 0.08);
+    color: var(--bg);
+    background: var(--text);
 }
 
 /* Nav Actions (Theme + Mobile) */
@@ -2101,6 +2102,8 @@ button {
     .header.scrolled {
         top: 0;
         border-radius: 0;
+        transform: none !important;
+        width: 100%;
     }
 
     .nav-container {
@@ -2158,9 +2161,15 @@ button {
         display: block;
     }
 
+    .section {
+        padding: 2.5rem 0;
+        /* Drastically reduced section gap */
+    }
+
     .hero-container {
         flex-direction: column-reverse;
-        padding-top: 4rem;
+        padding-top: 1.5rem;
+        /* Drastically reduced gap */
         text-align: center;
     }
 
@@ -2222,9 +2231,8 @@ button {
         gap: 1.5rem;
         padding: 2rem;
     }
-}
 
-@media (max-width:480px) {
+    /* --- Expanded Mobile Optimizations (now applied up to 768px) --- */
     .hero-name {
         font-size: 2.6rem;
     }
@@ -2244,29 +2252,71 @@ button {
         width: 100%;
     }
 
-    .footer-inner {
-        flex-direction: column;
-        text-align: center;
+    .footer {
+        padding: 3rem 0 1.5rem;
+        /* Significantly reduced mobile padding */
+        width: 100vw;
+        max-width: 100%;
+        overflow-x: hidden;
+        box-sizing: border-box;
+    }
+
+    .footer .container {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 1.5rem;
+        box-sizing: border-box;
+        overflow-x: hidden;
     }
 
     .footer-grid {
-        grid-template-columns: 1fr;
-        gap: 2.5rem;
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+        margin-bottom: 2rem;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Hide auxiliary link columns on mobile to keep it minimal and fixed */
+    .footer-links-col,
+    .footer-desc,
+    .footer-logo,
+    .footer-contact-col {
+        display: none;
     }
 
     .footer-brand {
         align-items: center;
+        width: 100%;
+        box-sizing: border-box;
     }
 
-    .footer-contact-list li {
+    .footer-desc {
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 1.5rem;
+        padding: 0;
+        font-size: 0.85rem;
+    }
+
+    .footer-socials {
+        display: flex;
+        /* Changed from grid to flex to center them nicely */
         justify-content: center;
+        width: 100%;
+        gap: 1rem;
     }
 
     .footer-bottom {
         flex-direction: column;
         gap: 1rem;
         text-align: center;
+        padding-top: 1.5rem;
+        width: 100%;
+        box-sizing: border-box;
     }
 }
 
@@ -2279,6 +2329,8 @@ button {
     padding: 6rem 0 2rem;
     position: relative;
     z-index: 10;
+    width: 100%;
+    overflow: hidden;
 }
 
 .footer-grid {
