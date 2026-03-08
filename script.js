@@ -426,7 +426,8 @@
         ];
 
         targetSelectors.forEach(selector => {
-            document.querySelectorAll(selector).forEach(el => {
+            document.querySelectorAll(selector).forEach((el, index) => {
+                // If it's a grid item, we let CSS handle stagger if multiple land in view at once
                 el.classList.add('reveal-on-scroll');
                 observer.observe(el);
             });
